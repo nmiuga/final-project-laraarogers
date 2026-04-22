@@ -499,6 +499,7 @@ struct DestinationDetailView: View {
     let destination: Destination
     @State private var temperatureText: String = "—"
     @State private var exchangeText: String = "—"
+    private let goodForColumns = [GridItem(.adaptive(minimum: 110), spacing: 8)]
 
     var body: some View {
         ScrollView {
@@ -559,16 +560,18 @@ struct DestinationDetailView: View {
 
                 if !destination.tags.isEmpty {
                     GroupBox("Good for") {
-                        FlowLayout(alignment: .leading, spacing: 8) {
+                        LazyVGrid(columns: goodForColumns, alignment: .leading, spacing: 8) {
                             ForEach(Array(destination.tags), id: \.self) { tag in
                                 Text(tag.label)
                                     .font(TravelTheme.captionFont.weight(.semibold))
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.horizontal, 10)
                                     .padding(.vertical, 6)
                                     .background(Capsule().fill(TravelTheme.sea.opacity(0.12)))
                                     .foregroundStyle(TravelTheme.sea)
                             }
                         }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
             }
