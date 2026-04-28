@@ -1,0 +1,15 @@
+Edits:
+- Added bottom tab navigation for Home, Search, Explore, and Travel Map.
+- Added user interface elements such as navigation, buttons, forms, or other interactive controls.
+- Styled the app to create a polished and intentional user experience.
+- Added a dedicated Search tab with a styled hero section and search results screen.
+- Added a dedicated Travel Map tab with visited and wishlist map markers.
+- Added a larger destination dataset with locations including Bali, Kyoto, Lisbon, Reykjavik, Tulum, Cape Town, Santorini, Marrakech, Queenstown, Barcelona, Banff, Hoi An, Zurich, Rio de Janeiro, and Cairo.
+- Added destination preference filtering using a dropdown menu and selectable travel preference tags.
+- Added wishlist buttons on destination detail pages so destinations can be saved or removed.
+- Added a visited and wishlist map system using red and yellow dots.
+- Added a hero image and additional landing-page sections to make the home page more visually interesting.
+- Added travel mood pills and a Travel Pulse section to give the home page a more custom landing-page feel.
+- Reworked the Explore page layout multiple times to improve card spacing, image consistency, and overall gallery presentation.
+- Updated several destination images, including Kyoto, Reykjavik, Queenstown, Santorini, and Hoi An.
+- Updated fonts and styling to give the app a more playful, polished travel aesthetic.
